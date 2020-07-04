@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/ic_baseline_add_24"
+        app:rippleColor="#F4F4F4" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.ernestoyaquello.dragdropswiperecyclerview.DragDropSwipeRecyclerView
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:behind_swiped_item_bg_color="#E53935"
+            app:behind_swiped_item_bg_color_secondary="#1E88E5"
+            app:behind_swiped_item_icon="@drawable/ic_baseline_delete_24"
+            app:behind_swiped_item_icon_margin="16dp"
+            app:behind_swiped_item_icon_secondary="@drawable/ic_baseline_archive_24"
+            app:divider="@drawable/list_divider"
+            app:item_layout="@layout/list_item_layout" />
+
+    </FrameLayout>
+</RelativeLayout>
